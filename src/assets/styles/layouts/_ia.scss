@@ -1,0 +1,210 @@
+.body-ia {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+
+  h1 {
+    margin-bottom: 48px;
+  }
+  h3 {
+    margin-top: 32px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: white;
+    flex-wrap: wrap;
+  }
+  .navbar .title {
+    font-size: 28px;
+    color: black;
+  }
+  .navbar .nav-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .nav-items li {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+  .navbar .nav-items li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+  }
+  .navbar .nav-items li.selected a {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+  .header {
+    text-align: center;
+    margin: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .header h1 {
+    font-size: 56px;
+    font-weight: bold;
+  }
+  .header h2 {
+    font-size: 24px;
+    color: gray;
+  }
+  .full-width-image {
+    border-radius: 10px;
+    height: 600px;
+    background-image: url('../images/ia_main_image.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  
+  }
+  .content-section {
+    margin: 60px;
+  }
+  .content-section h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .content-section h3 {
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .card .author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .card .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .card .author .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .card .author .details .name {
+    color: black;
+  }
+  .card .author .details .description {
+    color: gray;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  .footer .title {
+    font-size: 20px;
+  }
+  .footer .lists {
+    display: flex;
+    gap: 80px;
+  }
+  .footer .lists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .lists ul li {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .footer .lists ul li.bold {
+    font-weight: bold;
+  }
+  .footer .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .footer .social-icons i {
+    width: 20px;
+    height: 20px;
+  }
+  @media (max-width: 768px) {
+    .navbar .nav-items {
+      visibility: hidden;
+    }
+    .navbar .nav-items li {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .header {
+        margin: 20px;
+    }
+    .header h1 {
+        font-size: 32px;
+    }
+    .header h2 {
+        font-size: 18px;
+    }
+    .full-width-image {
+        height: 300px;
+    }
+    .content-section {
+        margin: 20px;
+    }
+    .content-section h2 {
+        font-size: 24px;
+    }
+    .content-section h3 {
+        font-size: 16px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .lists {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer .social-icons {
+        margin-top: 10px;
+    }
+  }
+}

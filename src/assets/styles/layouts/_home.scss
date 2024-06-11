@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  // Positioning
+  margin: 0;
+
+  // Box model
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  // Typography
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  // Visual
+  background-color: $uoc-bg;
+  color: $primary-color;
+}
+
+span {
+  color: $primary-color;
+}
+
+@layer components {
+  .card-participants {
+    @apply w-64 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+  }
+  .card-participants-title {
+    @apply text-lg font-bold mt-2.5 text-black;
+  }
+}
+

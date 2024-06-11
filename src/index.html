@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>UOC Boilerplate</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="grow">
+      <div class="max-w-[1000px] mx-auto my-5 p-5">
+        <div class="card-body p-6 bg-white rounded-lg shadow-md">
+          <h5 class="card-title text-2xl font-bold mb-4">Formulari de contacte</h5>
+          <p class="card-text text-base mb-6">T'enviarem un correu electrònic amb les respostes als teus dubtes</p>
+        
+          <div class="form-container">
+            <form name="contact" method="POST" netlify>
+              <div class="row g-2 mb-3 flex flex-wrap -mx-2">
+                <div class="col-md w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                  <div class="form-floating relative">
+                    <input type="text" class="form-control block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="name">
+                    <label for="name" class="absolute left-4 -top-2.5 bg-white px-1 text-sm text-gray-600">Nom</label>
+                  </div>
+                </div>
+                <div class="col-md w-full md:w-1/2 px-2">
+                  <div class="form-floating relative">
+                    <input type="text" class="form-control block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="surnames">
+                    <label for="surnames" class="absolute left-4 -top-2.5 bg-white px-1 text-sm text-gray-600">Cognoms</label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label block text-gray-700 mb-1">Email</label>
+                <input type="email" class="form-control block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="email">
+                <div id="nom" class="form-text text-gray-500 text-sm mt-1">Mai compartirem el teu correu electrònic amb ningú més.</div>
+              </div>
+              <div class="mb-3 col-md">
+                <div class="form-floating relative">
+                  <select class="bg-white form-select block w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="reason" aria-label="reason">
+                    <option selected value="join">Apuntar-se al concurs</option>
+                    <option value="doubts">Dubtes</option>
+                    <option value="other">Altres</option>
+                  </select>
+                  <label for="reason" class="absolute left-4 -top-2.5 bg-white px-1 text-sm text-gray-600">Motiu</label>
+                </div>
+              </div>
+              <include src="./views/button-primary.html"></include>
+            </form>
+          </div>
+        </div>
+      </div>      
+    </main>
+
+    <include src="./views/footer.html"></include>
+    
+  </body>
+</html>
